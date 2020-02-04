@@ -59,7 +59,7 @@ resource "azurerm_subnet" "example" {
   address_prefix       = "10.0.2.0/24"
 }
 
-yesource "azurerm_network_interface" "example" {
+resource "azurerm_network_interface" "example" {
   name                = "my-nw-interface-${count.index}-ryoma"
   count = var.hello_tf_instance_count
   location            = var.location
